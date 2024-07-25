@@ -1,0 +1,239 @@
+@import url(./conteudo1.css);
+@import url(./conteudo2.css);
+@import url(./conteudo3.css);
+@import url(./conteudo4.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@300&display=swap');
+
+body {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif !important;
+    background-image: linear-gradient(to bottom, #181616 0%, black 100%);
+    background-attachment: fixed; /* Mantém o fundo fixo enquanto o conteúdo rola */
+    background-size: cover; /* Certifica-se de que o gradiente cobre toda a área de fundo */
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(112, 3, 3);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(112, 3, 3);  /* creates padding around scroll thumb */
+  }
+
+
+/* Comeco header pc */
+.header-page {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    background-color: none;
+
+    /* vertical */
+    align-items: center;
+
+    /* horizontal */
+    justify-content: space-between;
+
+    padding: 0 15px;
+
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    
+    z-index: 99;
+}
+
+.ul-pc{
+    list-style: none;
+    display: flex;
+}
+
+.li-pc{
+    margin: 0 20px;
+    display: flex;
+}
+
+.li-pc-ultimo{
+    margin-right: 40px !important;
+}
+
+.wpp-web{
+    margin-top: 20px !important;
+}
+
+.logo{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.a-pc-header{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16.5px;
+    margin-top: 14.5px;
+    position: relative;
+}
+
+
+.wpp-web-a{
+    margin-top: 4px !important;
+    margin-bottom: -8px;
+}
+
+.a-baixar{
+    color: rgb(71, 71, 71);
+    font-size: 16.5px;
+}
+
+.descer{
+    font-size: 10px !important;
+}
+
+.descer-div{
+    margin-top: -3.3%;
+    margin-left: 2%;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+.texto-final-header{
+    margin-top: 10px;
+}
+
+.menu-celular{
+    display: none;
+}
+
+
+
+.a-header:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(112, 3, 3);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    z-index: 99;
+    transition: 0.5s;
+}
+
+.a-header:hover:after{
+    width: 100%;
+}
+
+input, textarea{
+    background-color: #000 !important;
+    color: white !important;
+}
+
+
+@media screen and (max-width: 600px){
+    .menu-celular{
+        display: block;
+    }
+
+    .ul-pc{
+        display: none;
+    }
+
+    .header-page{
+        justify-content: start;
+        padding: 3px !important;
+        height: 63px;
+        z-index: 97;
+    }
+
+    .logo{
+        width: 100px;
+        margin-left: 15px;
+    }
+
+    
+/* COMECO MENU CELULAR */
+input[type="checkbox"]{
+    display: none;
+}
+
+.header-celular{
+    background-color: #000!important;
+    width: 100% !important;
+    height: 270px !important;
+    position: fixed !important;
+    bottom: 100%;
+    left: 0%;
+    transition: all 0.5s;
+    z-index: 98;
+    text-align: center;
+}
+
+.homeCelular{
+    margin-top: 80px;
+}
+
+
+input[type="checkbox"]:checked ~ .header-celular {
+    transform: translateY(100%);
+}
+
+.celular-botoes{
+    list-style: none;
+}
+
+.li2{
+    margin-bottom: 20px;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+.elemento-header{
+    font-size: 20px !important;
+    color: rgb(255, 255, 255);
+}
+
+.label1{
+    position: fixed !important;
+    top: 17px;
+    z-index: 97;
+    right: 5%;
+    width: 6.5% !important;
+}
+
+.label2{
+    position: absolute;
+    top: 17px;
+    z-index: 99;
+    right: 5%;
+    width: 4% !important;
+}
+
+.header-menu2{
+    position: absolute;
+}
+
+/* FINAL MENU CELULAR */
+}
+
+

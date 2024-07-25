@@ -1,0 +1,22 @@
+.container2{
+    display: flex;
+    padding-top: 100px;
+}
+
+.container2 img{
+    width: 8%;
+    margin: auto;
+}
+
+.conteudo2-pai{
+    text-align: center;
+    padding-top: 80px;
+    border-top: 1px solid #312e2e;
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    .container2 img{
+        width: 12%;
+    }
+}

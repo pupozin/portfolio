@@ -1,0 +1,53 @@
+.conteudo3{
+    text-align: center;
+}
+
+.conteudo3-pai{
+    padding-top: 80px;
+    border-top: 1px solid #312e2e;
+}
+
+.imagens{
+    width: 60%;
+    border-radius: 22px;
+}
+
+.projetos{
+    display: flex;
+    margin-top: 100px;
+    margin-left: -60px;
+    padding-bottom: 100px;
+}
+
+.texto-projetos{
+    text-align: start;
+    margin-top: 35px;
+    margin-left: -45px;
+    width: 50%;
+}
+
+.titulo{
+    margin-bottom: 30px;
+}
+
+.paragrafo{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 990px){
+    .projetos{
+        display: block;
+        margin-left: 0;
+        padding-bottom: 50px;
+    }
+
+    .texto-projetos{
+        margin-left: 15px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .imagens{
+        width: 90%;
+    }
+}

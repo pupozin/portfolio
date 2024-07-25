@@ -1,0 +1,153 @@
+.conteudo1-pai{
+    padding-bottom: 150px;
+    padding-top: 200px;
+}
+
+.div-foto1 img{
+    width: 400px;
+    border-radius: 15px;
+}
+
+.container1{
+    display: flex;
+}
+
+.texto-1{
+    width: 750px;
+    padding-left: 120px;
+    padding-top: 100px;
+}
+
+.texto-1 span{
+    background: linear-gradient(to right, #7a5353, rgb(112, 3, 3));
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+.texto-1 h1{
+    padding-bottom: 10px;
+    font-size: 50px;
+    border-right: 2px solid #ffff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.texto-1 a, h2{
+    color: rgb(189, 185, 185);
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.texto-1 p {
+    width: 80%;
+}
+
+.btn-vermelho{
+    background-color: rgb(112, 3, 3);
+    margin-top: 20px;
+}
+
+.btn-vermelho:hover{
+    background-color: rgb(37, 1, 1);
+}
+
+.typing-animation{
+    animation: blinkCursor 800ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+
+
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor{
+    from {
+        border-right-color: #ffff; 
+    }
+    to {
+        border-right-color: transparent; 
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .container1{
+        width: 100%;
+    }
+
+    .texto-1 h1{
+        padding-bottom: 10px;
+        font-size: 35px;
+    }
+
+    .texto-1 p{
+        font-size: 13px !important;
+    }
+
+    .div-foto1 img{
+        margin-left: 40px;
+    }
+
+    .texto-1{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .texto-1{
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .div-foto1 img{
+        width: 100%;
+        border-radius: 15px;
+        margin-left: 0;
+    }
+    
+    .container1{
+        width: 500px;
+        display: block;
+    }
+
+    .conteudo1-pai{
+        padding-top: 120px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+.texto-1{
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 0;
+}
+
+.container1{
+    width: 320px;
+}
+
+.div-foto1 img{
+    margin-left: 0px;
+}
+
+.conteudo1-pai{
+    padding-bottom: 80px;
+}
+
+
+.texto-1 h1{
+    padding-bottom: 10px;
+    font-size: 23px;
+}
+}
+
+
+
